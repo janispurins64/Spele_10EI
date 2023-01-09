@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+komentāri
+-->
+<html>
+    <head>
+        <title>10EI Web-1 Spēle</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="mans_stils.css">
+        <script type="text/javascript" charset="UTF-8" src="mani_2.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        <script type="text/javascript" charset="UTF-8">
+            window.onload = () => {
+                visasPogas(16);
+                dzivibas(3);
+            }
+          </script>
+        
+    -->
+    
+    </head>
+    <body>
+        <h1>Jauna spēle</h1>
+        <nav>
+            <a href="spele.html">Noteikumi</a> |
+            <a href="jauna_spele.html">Jauna spēle</a> |
+            <a href="iestatijumi.html">Iestatījumi</a>
+        </nav>
+        <div class="meklet-burtu"> <!--Konteiners virsrakstam Meklē burtu: XX-->
+
+        </div>
+        <div> <!--Konteiners dzīvībām-->
+            <div  class="dziviba"></div>
+            <form> <!--Pogas ģenerē javascript -->
+                <button type="button" onclick="jaunaspele()">Jauna spēle</button>
+                <button type="button" onclick="clickPoga()">Click Poga</button>
+            </form>
+        </div>
+        <div class="visas-pogas"> <!--Konteiners pogām-->
+            <form class="pogas-pogas"> <!--Pogas ģenerē javascript -->
+            <button type="button" class="poga1" id="p1" onclick="clickPoga(id)">A</button>
+            <button type="button" class="poga1" id="p2" onclick="clickPoga(id)">B</button>
+            <button type="button" class="poga1" id="p3" onclick="clickPoga(id)">C</button>
+            <button type="button" class="poga1" id="p4" onclick="clickPoga(id)">C</button>
+            <button type="button" class="poga1" id="p5" onclick="clickPoga(id)">D</button>
+            <button type="button" class="poga1" id="p6" onclick="clickPoga(id)">S</button>
+            <button type="button" class="poga1" id="p7" onclick="clickPoga(id)">F</button>
+            <button type="button" class="poga1" id="p8" onclick="clickPoga(id)">W</button>
+            <button type="button" class="poga1" id="p9" onclick="clickPoga(id)">R</button>
+            </form>
+        </div>
+    </body>
+</html>
